@@ -15,7 +15,7 @@ Your task is to write the implementations for a set of methods. Each method
 takes in an array of strings and manipulate those strings in a specific way.
 These methods should work with any array of strings.
 
-`sentence_to_array(string)` - Takes in a string. Returns an array of individual
+1. `sentence_to_array(string)` - Takes in a string. Returns an array of individual
 words from the string, separated using whitespace.
 
 ```ruby
@@ -23,7 +23,7 @@ sentence_to_array('Earth has not anything to show more fair')
 # => ['Earth', 'has', 'not', 'anything', 'to', 'show', 'more', 'fair']
 ```
 
-`clean_up_elements(array)` - Takes in an array. Returns a new array of strings in
+2. `clean_up_elements(array)` - Takes in an array. Returns a new array of strings in
 which all leading and trailing whitespaces have been removed and some special
 characters replaced with whitespaces. Removes any `nil` or empty string values
 in the array
@@ -33,7 +33,7 @@ clean_up_elements([' hello', nil, '  and ', '', 'goodbye ', nil])
 # => ['hello', 'and', 'goodbye']
 ```
 
-`array_to_sentence(array)` - Takes in an array. Returns an _string_ of joined
+3. `array_to_sentence(array)` - Takes in an array. Returns an _string_ of joined
 array values. The first word should be capitalized.
 
 ```ruby
@@ -41,7 +41,7 @@ array_to_sentence('and', 'all', 'that', 'mighty', 'heart', 'is', 'lying', 'still
 # => 'And all that mighty heart is lying still'
 ```
 
-`capitalize_all_elements(array)` - Takes in an array. Returns a new array in which
+4. `capitalize_all_elements(array)` - Takes in an array. Returns a new array in which
 the first character of every string capitalized
 
 ```ruby
@@ -49,7 +49,7 @@ capitalize_all_elements(['see', 'spot', 'run'])
 # => ['See', 'Spot', 'Run']
 ```
 
-`substitute_strings(array, pattern, replacement)` - Takes in an array, a
+5. `substitute_strings(array, pattern, replacement)` - Takes in an array, a
 pattern, and replacement. Returns a new array in which all strings that match
 the pattern have been substituted by the replacement. Substitutions should be
 case sensitive.
@@ -59,7 +59,7 @@ substitute_strings(['go', 'dog', 'Go'], 'go', 'yo')
 # => ['yo', 'dog', 'Go']
 ```
 
-`title_format(array)` - Takes in an array. Returns a new array in which all
+6. `title_format(array)` - Takes in an array. Returns a new array in which all
 strings have been formatted as titles. The first letter of the first word is
 always capitalized. The first letter of every other word in a string is also
 capitalized, with the exception of articles, conjunctions and prepositions.
